@@ -1,0 +1,57 @@
+// programsDoc.h : interface of the CProgramsDoc class
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_PROGRAMSDOC_H__FFD98C1D_3EF2_41A5_8158_FF583BDB39C4__INCLUDED_)
+#define AFX_PROGRAMSDOC_H__FFD98C1D_3EF2_41A5_8158_FF583BDB39C4__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+
+class CProgramsDoc : public CDocument
+{
+protected: // create from serialization only
+	CProgramsDoc();
+	DECLARE_DYNCREATE(CProgramsDoc)
+
+// Attributes
+public:
+
+// Operations
+public:
+
+// Overrides
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CProgramsDoc)
+	public:
+	virtual BOOL OnNewDocument();
+	virtual void Serialize(CArchive& ar);
+	//}}AFX_VIRTUAL
+
+// Implementation
+public:
+	virtual ~CProgramsDoc();
+#ifdef _DEBUG
+	virtual void AssertValid() const;
+	virtual void Dump(CDumpContext& dc) const;
+#endif
+
+protected:
+
+// Generated message map functions
+protected:
+	//{{AFX_MSG(CProgramsDoc)
+		// NOTE - the ClassWizard will add and remove member functions here.
+		//    DO NOT EDIT what you see in these blocks of generated code !
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+};
+
+/////////////////////////////////////////////////////////////////////////////
+
+//{{AFX_INSERT_LOCATION}}
+// Microsoft Visual C++ will insert additional declarations immediately before the previous line.
+
+#endif // !defined(AFX_PROGRAMSDOC_H__FFD98C1D_3EF2_41A5_8158_FF583BDB39C4__INCLUDED_)
